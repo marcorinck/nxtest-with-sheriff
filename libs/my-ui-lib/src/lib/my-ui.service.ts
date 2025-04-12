@@ -1,0 +1,11 @@
+import { Injectable } from '@angular/core';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class MyUiService {
+
+  constructor() {
+    console.log("my ui!")
+   }
+}

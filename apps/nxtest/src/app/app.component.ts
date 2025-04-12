@@ -1,6 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { NxWelcomeComponent } from './nx-welcome.component';
+import {AnotherTestService} from '@nx/annother-lib';
+import {MyUiService} from '@nx/my-ui-lib';
 
 @Component({
   imports: [NxWelcomeComponent, RouterModule],
@@ -10,4 +12,6 @@ import { NxWelcomeComponent } from './nx-welcome.component';
 })
 export class AppComponent {
   title = 'nxtest';
+  myUiService = inject(MyUiService);
+  anotherService = inject(AnotherTestService);
 }
