@@ -1,4 +1,5 @@
 import nx from '@nx/eslint-plugin';
+import sheriff from '@softarc/eslint-plugin-sheriff';
 
 export default [
   ...nx.configs['flat/base'],
@@ -24,6 +25,10 @@ export default [
         },
       ],
     },
+  },
+  {
+    files: ['**/*.ts'],
+    ...sheriff.configs.all,
   },
   {
     files: [
