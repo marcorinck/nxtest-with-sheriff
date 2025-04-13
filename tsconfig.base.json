@@ -15,8 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nx/annother-lib": ["libs/annother-lib/src/index.ts"],
-      "@nx/my-ui-lib": ["libs/my-ui-lib/src/index.ts"]
+      "@nx/annother-lib/*": ["libs/annother-lib/src/lib/*"],
+      "@nx/my-ui-lib/*": ["libs/my-ui-lib/src/lib/*"]
     }
   },
   "exclude": ["node_modules", "tmp"]
