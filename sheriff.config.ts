@@ -20,5 +20,6 @@ export const config: SheriffConfig = {
     root: ['type:feature', 'type:domain-root'], // (domain wildcard) so apps can import their shell feature,
     noTag: "noTag"
   },
-  enableBarrelLess: true
+  enableBarrelLess: true,
+  autoTagging: false
 };
